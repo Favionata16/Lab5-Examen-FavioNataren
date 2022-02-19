@@ -10,6 +10,9 @@ package examenlab5_progra2_favionataren;
  * @author favio
  */
 public class Extraterrestre  {
-    
+    public Extraterrestre() {
+    }
+
+    public void final_chance() {}
     
 }

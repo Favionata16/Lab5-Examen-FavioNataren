@@ -11,6 +11,21 @@ package examenlab5_progra2_favionataren;
  */
 public class Alien extends Extraterrestre {
     String planeta;
+        public Alien(String planeta) {
+        this.planeta = planeta;
+    }
+
+    public String getPlaneta() {
+        return planeta;
+    }
+
+    public void setPlaneta(String planeta) {
+        this.planeta = planeta;
+    }
+    
+    public void finalChance(){
+    
+    }
 
     
     

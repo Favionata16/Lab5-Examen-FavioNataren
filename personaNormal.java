@@ -10,6 +10,14 @@ package examenlab5_progra2_favionataren;
  * @author favio
  */
 public class personaNormal extends persona {
-
+    public  void finalChance(){
     
+    }
+
+    public personaNormal(String nombre, String poder, String debilidad, boolean heroeVilano, int fuerza, int habilidadMental, int habilidadFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroeVilano, fuerza, habilidadMental, habilidadFisica, tieneSquad);
+    }
+
+    public personaNormal() {
+    }
 }

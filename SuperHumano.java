@@ -11,6 +11,25 @@ package examenlab5_progra2_favionataren;
  */
 public class SuperHumano extends persona {
     String Superpoder;
+    public  void finalChance(){
+    
+    }
+
+    public SuperHumano(String Superpoder, String nombre, String poder, String debilidad, boolean heroe_vilano, int fuerza, int habilidadMental, int habilidadFisica, boolean tiene_escuadron) {
+        super(nombre, poder, debilidad, heroe_vilano, fuerza, habilidadMental, habilidadFisica, tiene_escuadron);
+        this.Superpoder = Superpoder;
+    }
 
     
+
+    public SuperHumano() {
+    }
+
+    public String getSuperpoder() {
+        return Superpoder;
+    }
+
+    public void setSuperpoder(String Superpoder) {
+        this.Superpoder = Superpoder;
+    }
 }
