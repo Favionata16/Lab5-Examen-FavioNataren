@@ -119,16 +119,16 @@ public class Examen1_Lab5_favioNataren {
                             System.out.println("2- SuperHeroe");
                             System.out.print("Ingrese de que sera el escuadron: ");
                             int opcion3 = lea.nextInt();
-                            boolean hero_villa = true;
+                            boolean heroeVillano = true;
                             switch (opcion3) {
                                 case 1: {
-                                    hero_villa = false;
-                                    escuadrones.add(new escuadrones(nom, Lugar, base, hero_villa));
+                                    heroeVillano = false;
+                                    escuadrones.add(new escuadrones(nom, Lugar, base, heroeVillano));
                                 }
                                 break;
                                 case 2: {
-                                    hero_villa = true;
-                                    escuadrones.add(new escuadrones(nom, Lugar, base, hero_villa));
+                                    heroeVillano = true;
+                                    escuadrones.add(new escuadrones(nom, Lugar, base, heroeVillano));
                                 }
                                 break;
                                 default: {
