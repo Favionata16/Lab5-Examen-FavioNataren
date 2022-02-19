@@ -15,19 +15,19 @@ public abstract class persona {
     String debilidad;
     boolean heroe_vilano;
     int fuerza;
-    int habilidadMental;
-    int habilidadFisica;
-    boolean tieneSquad;
+    int habilidad_mental;
+    int habilidad_ficica;
+    boolean tiene_escuadron;
 
-    public persona(String nombre, String poder, String debilidad, boolean heroe_vilano, int fuerza, int habilidadMental, int habilidadFisica, boolean tieneSquad) {
+    public persona(String nombre, String poder, String debilidad, boolean heroe_vilano, int fuerza, int habilidad_mental, int habilidad_ficica, boolean tiene_escuadron) {
         this.nombre = nombre;
         this.poder = poder;
         this.debilidad = debilidad;
         this.heroe_vilano = heroe_vilano;
         this.fuerza = fuerza;
-        this.habilidadMental = habilidadMental;
-        this.habilidadFisica = habilidadFisica;
-        this.tieneSquad = tieneSquad;
+        this.habilidad_mental = habilidad_mental;
+        this.habilidad_ficica = habilidad_ficica;
+        this.tiene_escuadron = tiene_escuadron;
     }
 
     public persona() {
@@ -74,32 +74,36 @@ public abstract class persona {
     }
 
     public int getHabilidad_mental() {
-        return habilidadMental;
+        return habilidad_mental;
     }
 
-    public void setHabilidad_mental(int habilidadMental) {
-        this.habilidadMental = habilidadMental;
+    public void setHabilidad_mental(int habilidad_mental) {
+        this.habilidad_mental = habilidad_mental;
     }
 
-    public int getHabilidadFisica() {
-        return habilidadFisica;
+    public int getHabilidad_ficica() {
+        return habilidad_ficica;
     }
 
-    public void setHabilidad_ficica(int habilidadFisica) {
-        this.habilidadFisica = habilidadFisica;
+    public void setHabilidad_ficica(int habilidad_ficica) {
+        this.habilidad_ficica = habilidad_ficica;
     }
 
-    public boolean isTieneSquad() {
-        return tieneSquad;
+    public boolean isTiene_escuadron() {
+        return tiene_escuadron;
     }
 
-    public void setTiene_escuadron(boolean tieneSquad) {
-        this.tieneSquad = tieneSquad;
+    public void setTiene_escuadron(boolean tiene_escuadron) {
+        this.tiene_escuadron = tiene_escuadron;
     }
 
     @Override
     public String toString() {
-        return "persona{" + "nombre=" + nombre + ", poder=" + poder + ", debilidad=" + debilidad + ", fuerza=" + fuerza + ", habilidad mental=" + habilidadMental + ", habilidad fisica=" + habilidadFisica + ", tiene escuadron=" + tieneSquad + '}';
+        if (heroe_vilano==true) {
+            return "persona " + "nombre=" + nombre + ", poder: " + poder ;
+        }else{
+            return "persona " + "nombre=" + nombre + ", debilidad=" + debilidad ;
+        }
     }
 
     

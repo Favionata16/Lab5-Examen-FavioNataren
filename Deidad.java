@@ -13,12 +13,12 @@ public class Deidad extends Extraterrestre {
     boolean creyentes;
     String religion;
 
-    public Deidad(boolean creyentes, String religion) {
+    public Deidad(boolean creyentes, String religion, String nombre, String poder, String debilidad, boolean heroeVillano, int fuerza, int habilidadMental, int habilidadFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroeVillano, fuerza, habilidadMental, habilidadFisica, tieneSquad);
         this.creyentes = creyentes;
         this.religion = religion;
     }
 
-    
 
     public boolean isCreyentes() {
         return creyentes;
@@ -36,8 +36,13 @@ public class Deidad extends Extraterrestre {
         this.religion = religion;
     }
     
-    public void finalChance(){
+    public void final_chance(){
     
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 
     

@@ -11,9 +11,13 @@ package examenlab5_progra2_favionataren;
  */
 public class Alien extends Extraterrestre {
     String planeta;
-        public Alien(String planeta) {
+
+    public Alien(String planeta, String nombre, String poder, String debilidad, boolean heroeVillano, int fuerza, int habilidadMental, int habilidadFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroeVillano, fuerza, habilidadMental, habilidadFisica, tieneSquad);
         this.planeta = planeta;
     }
+
+    
 
     public String getPlaneta() {
         return planeta;
@@ -25,6 +29,11 @@ public class Alien extends Extraterrestre {
     
     public void finalChance(){
     
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 
     

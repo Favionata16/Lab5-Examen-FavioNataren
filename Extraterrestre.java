@@ -9,10 +9,13 @@ package examenlab5_progra2_favionataren;
  *
  * @author favio
  */
-public class Extraterrestre  {
-    public Extraterrestre() {
+public class Extraterrestre extends persona {
+    public Extraterrestre(String nombre, String poder, String debilidad, boolean heroeVillano, int fuerza, int habilidadMental, int habilidadFisica, boolean tieneSquad) {
+        super(nombre, poder, debilidad, heroeVillano, fuerza, habilidadMental, habilidadFisica, tieneSquad);
     }
 
-    public void final_chance() {}
+
+   
+    public  void finalChance(){}
     
 }
